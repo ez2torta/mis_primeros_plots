@@ -33,7 +33,7 @@ def fof(f):
 
 # generates g(g(x)
 def gog(g):
-    random_number = random.choice([0, 100000])
+    random_number = random.choice(["0", 100000])
     return lambda x: g(g(x)) + random_number
 
 

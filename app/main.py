@@ -38,16 +38,6 @@ app = FastAPI()
 
 def plot_to_memory(out_format: str = "png"):
     plt.clf()
-    # fig, ax = plt.subplots()
-    # ticks = [0.5,0.6,0.7,0.8,0.9,1.0]
-    # ax.set_yticks(ticks)
-
-    # dic = { 1.0 : "some custom text"}
-    # labels = [ticks[i] if t not in dic.keys() else dic[t] for i,t in enumerate(ticks)]
-    # ## or
-    # # labels = [dic.get(t, ticks[i]) for i,t in enumerate(ticks)]
-
-    # ax.set_yticklabels(labels)
 
     f = ff.generate_linear_function_between_two_points(1.9, 5000, 2, 35)
     g = ff.generate_linear_function_between_two_points(2, 35, 7, 2)
